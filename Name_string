@@ -1,0 +1,31 @@
+#文字列の名前を動的に変更する
+def func(val):
+    return 'time_{0}'.format(val)
+
+b = 1
+d = []
+for i in range(10):
+    b += 1
+    c = []
+    a = func(b)
+    #a = func()
+    c.append(b)
+    d.append(b)
+    print(a + "=" + str(c))
+print("これは偽物です：" + str(d))
+
+"""
+〇出力結果〇
+time_2=[2]
+time_3=[3]
+time_4=[4]
+time_5=[5]
+time_6=[6]
+time_7=[7]
+time_8=[8]
+time_9=[9]
+time_10=[10]
+time_11=[11]
+これは偽物です：[2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+"""
+timeの後の数字が動的に変化します。
